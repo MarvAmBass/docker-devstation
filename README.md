@@ -24,5 +24,5 @@ alias tmuxc='docker run -ti --rm --name devstation -v $HOME:/home/user -v /var/r
 # Command
 
 ```
-# docker run --ti --rm -e "RAW_HOSTNAME=$HOSTNAME" -e "RAW_USER=$USER" -v $HOME:/home/$USER -v /var/run/docker.sock:/var/run/docker.sock --privileged marvambass/devstation tmux
+# docker run -ti --rm -e "RAW_HOSTNAME=$HOSTNAME" -e "RAW_USER=$USER" -v $HOME:/home/$USER -v /var/run/docker.sock:/var/run/docker.sock --privileged marvambass/devstation tmux
 ```
