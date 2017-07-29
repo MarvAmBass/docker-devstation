@@ -7,10 +7,22 @@ Main focus is on masOS Sierra (or later) but it will and should work on other sy
 
 # Usage
 
-You will enter the container as user, which will have the user id of the default/first user at macos.
+First I advice to create you __~/.tmux.conf__ how you like it.
 
-to use it, just add an alias to your __~/.bash_profile__ (I've jused tmuxc so inside the container tmux stays usable without a loop)
+For example:
+
+```
+echo "set-window-option -g mode-keys vi" >> ~/.tmux.conf
+```
+
+Then to use it, just add an alias to your __~/.bash_profile__ (I've jused tmuxc so inside the container tmux stays usable without a loop)
 
 ```
 alias tmuxc='docker run -ti --rm --name devstation -v $HOME:/home/user -v /var/run/docker.sock:/var/run/docker.sock --privileged marvambass/devstation bash -c "cd; tmux"'
+```
+
+# Command
+
+```
+# docker run --ti --rm -e "RAW_HOSTNAME=$HOSTNAME" -e "RAW_USER=$USER" -v $HOME:/home/$USER -v /var/run/docker.sock:/var/run/docker.sock --privileged marvambass/devstation tmux
 ```
