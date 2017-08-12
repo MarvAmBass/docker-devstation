@@ -9,6 +9,7 @@ RUN apk --no-cache add bash \
                        git \
                        elinks \
                        docker \
+                       ansible \
                        wget \
                        curl \
  \
