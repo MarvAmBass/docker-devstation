@@ -1,4 +1,4 @@
-FROM alpine
+FROM golang:alpine
 
 RUN apk --no-cache add bash \
                        tmux \
