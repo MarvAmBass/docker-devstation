@@ -14,6 +14,7 @@ RUN apk --no-cache add bash \
                        curl \
                        gnutls \
                        gnutls-utils \
+                       pwgen \
  \
  && curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose \
  && chmod a+x /usr/local/bin/docker-compose \
