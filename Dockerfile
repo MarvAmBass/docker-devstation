@@ -6,6 +6,7 @@ RUN apk --no-cache add bash \
                        sudo \
                        openssl \
                        openssh-client \
+                       sshpass \
                        git \
                        elinks \
                        docker \
